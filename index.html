@@ -7,25 +7,29 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet">
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Наші традиції</a></li>
-                <li><a href="">Шеф-кухарі</a></li>
-                <li><a href="">Формати</a></li>
-                <li><a href="">Контакти</a></li>
+    <header class="header">
+        <div class="container">
+        <nav class="header_nav">
+            <a href="./index.html"><img src="./images/logo.svg" alt="Логотип сучасної пекарні"></a>
+            <ul class="nav-menu">
+                <li><a class="link" href="#traditions_section">Наші традиції</a></li>
+                <li><a class="link" href="#chef_section">Шеф-кухарі</a></li>
+                <li><a class="link" href="#forma_section">Формати</a></li>
+                <li><a class="link" href="#contacts_section">Контакти</a></li>
             </ul>
         </nav>
-        <button type="submit">Замовити дзвінок</button>
+        <button class="button" type="submit">Замовити дзвінок</button>
     </header>
     <main>
 <section>
 <h1>Сучасна пекарня</h1>
 </section>
 
-<section>
+<section id="traditions_section">
     <ui>
     <li>Великий попит на ринку </li>
     <li>Доступні за бюджетом формати</li>
@@ -37,9 +41,10 @@
    <span> 5 хвилин і замовлення готове.</span>
     А ще у наших пекарень стильний дизайн 
     та висока якість обслуговування!</p>
+    <img src="./images/baker_man.jpg" alt="Пекарь">
 </section>
 
-<section>
+<section id="chef_section">
 <h2>Наші найкращі шеф -кухарі</h2>
 <ul>
     <li><article>
@@ -60,7 +65,7 @@
 </ul>
 </section>
 
-<section>
+<section id="forma_section">
 <h2>Формати</h2>
 <ul>
     <li><article>
@@ -87,18 +92,21 @@
 </ul>
 </section>
 
-<section>
-<h2>Приєднуйся до мережі пекарень    </h2>
+<section id="contacts_section">
+<h2>Приєднуйся до мережі пекарень</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640546631716!2d30.48865321213748!3d50.45666967147491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1699694646844!5m2!1sru!2sua" width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
     </main>
     <footer>
-        <a href="#"></a>
+        <a href="#">
+            <a href="./index.html"><img src="./images/logo.svg" alt="Логотип сучасної пекарні"></a>
+        </a>
         <nav>
             <ul>
-                <li><a href="">Наші традиції</a></li>
-                <li><a href="">Шеф-кухарі</a></li>
-                <li><a href="">Формати</a></li>
-                <li><a href="">Контакти</a></li>
+                <li><a href="#traditions_section">Наші традиції</a></li>
+                <li><a href="#chef_section">Шеф-кухарі</a></li>
+                <li><a href="#forma_section">Формати</a></li>
+                <li><a href="#contacts_section">Контакти</a></li>
             </ul>
         </nav>
         <address>
@@ -116,8 +124,9 @@
                 <li><a href=""></a></li>
             </ul>
             <a href=""target="_blank">Політика конфіденційності</a>
-            <p>© 2022 Дані захищені</p>
+            <p>&copy; 2022 Дані захищені</p>
         </address>
+        </div>
     </footer>
 </body>
 </html>

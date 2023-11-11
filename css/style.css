@@ -1,0 +1,18 @@
+.button{
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 2px solid #819B57;
+    background-color: #819B57;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--bakery-landing-1-background, #FAF4EA);
+}
+.button:hover{
+    background-color: transparent;
+    color: var(--bakery-landing-13, #465929);;
+}

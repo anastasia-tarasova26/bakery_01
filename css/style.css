@@ -1,18 +1,101 @@
+:root{
+--color-brand:#819B57;
+--color-primery-light:#FAF4EA;
+--color-primery-dark:#31261A;
+--color-brand-dark:#465929;
+}
+
+
+body{
+    color: var(--color-primery-dark);
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.section-title{
+    color: var(--color-primery-dark);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 84px;
+}
+
+.section-title .accent{
+    color: var(--color-brand-dark);
+}
+/*Button*/
+
 .button{
     display: flex;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 8px;
-    border: 2px solid #819B57;
-    background-color: #819B57;
+    border: 2px solid var(--color-brand);
+    background-color: var(--color-brand);
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    color: var(--bakery-landing-1-background, #FAF4EA);
+    color: var(--color-primery-light);
 }
 .button:hover{
     background-color: transparent;
-    color: var(--bakery-landing-13, #465929);;
+    color: var(--color-brand-dark);
 }
+
+/*header*/
+
+.link{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-primery-light);
+    text-align: center;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--color-brand);
+    font-weight: 600;
+}
+
+/*hero section*/
+
+.hero-title{
+    color: var(--color-primery-light);
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.hero-title .accent{
+    color: var(--color-brand);
+}
+
+/*advanteges*/
+
+.advanteges-list{
+    background-color: var(--color-brand);
+    color: var(--color-primery-light);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/*traditions section*/
+
+/*chef sections*/
+
+
+/*forma sections*/
+
+/*contacts sections*/
+
+/*footer*/

@@ -50,6 +50,7 @@ body{
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
+    margin: 0;
 }
 address{
     font-style: normal;
@@ -63,6 +64,12 @@ h5,
 h6,
 p {
     margin-top: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
 }
 
 ul{
@@ -164,11 +171,15 @@ ul{
 /*traditions section*/
 
 .traditions-section{
-    
+    padding-top: 96px;
 }
 
 .traditions-text .brand{
  color: var(--color-brand);
+}
+
+.traditions-title{
+    margin-bottom: 42px;
 }
 
 .traditions-text .uppercase {
@@ -179,10 +190,18 @@ ul{
 .chef-title{
     font-size: 40px;
     font-weight: 600;
+    margin-bottom: 16px;
 }
 
+.chef-section-title{
+    margin-bottom: 80px;
+}
 
 /*forma sections*/
+
+.forma-title{
+margin-bottom: 80px;
+}
 
 .form-title{
     font-size: 24px;
@@ -197,6 +216,10 @@ ul{
 }
 
 /*contacts sections*/
+
+.contacts-title{
+    margin-bottom: 16px;
+}
 
 .contacts-text{
     color: var(--color-brand-dark);

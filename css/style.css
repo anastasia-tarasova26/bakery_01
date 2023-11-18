@@ -74,6 +74,8 @@ p {
 
 ul{
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .section-title{
@@ -81,7 +83,8 @@ ul{
     font-size: 64px;
     font-weight: 900;
     line-height: 1.3;
-    text-align: center;
+    
+   
 }
 
 .section-title .accent{
@@ -121,6 +124,26 @@ ul{
 
 /*header*/
 
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu{
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 .link{
     color: var(--color-primery-light);
     text-align: center;
@@ -131,6 +154,8 @@ ul{
     color: var(--color-brand);
     font-weight: 600;
 }
+
+
 
 /*hero section*/
 
@@ -152,26 +177,38 @@ ul{
 
 /*advanteges*/
 
-.advanteges{
-
+.advanteges-section{
+background-color: var(--color-brand);
+padding: 16px 0;
 }
 
 .advanteges-list{
-    background-color: var(--color-brand);
-    color: var(--color-primery-light);
-    
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .advanteges-item{
     font-size: 20px;
     font-weight: 300;
+    color: var(--color-primery-light);
 }
 
 
 /*traditions section*/
 
 .traditions-section{
-    padding-top: 96px;
+padding-top: 96px;
+}
+
+.traditions-container{
+display: flex;
+justify-content: space-between;
+gap: 40px;
+}
+
+.traditions-content{
+max-width: 710px;
 }
 
 .traditions-text .brand{
@@ -180,10 +217,15 @@ ul{
 
 .traditions-title{
     margin-bottom: 42px;
+    
 }
 
 .traditions-text .uppercase {
     text-transform: uppercase;
+}
+
+.traditions-text.limited{
+    max-width: 340px;
 }
 /*chef sections*/
 
@@ -199,6 +241,21 @@ ul{
 
 /*forma sections*/
 
+.format-card{
+    border: 1px solid lightgrey;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.formats-list{
+    display: flex;
+    gap: 20px;
+}
+
+.formats-item{
+    flex-basis: calc((100% - 40px) / 3);
+}
+
 .forma-title{
 margin-bottom: 80px;
 }
@@ -213,12 +270,16 @@ margin-bottom: 80px;
     font-size: 14px;
     font-weight: 300;
     color: var(--color-primery-light);
+    
 }
+
+
 
 /*contacts sections*/
 
 .contacts-title{
     margin-bottom: 16px;
+    justify-content: ;
 }
 
 .contacts-text{

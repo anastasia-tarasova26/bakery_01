@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--color-brand);
+  background-color: var(--color-brand);
+  font-weight: 600;
+  color: var(--color-primary-light);
+}
+.button:hover {
+  background-color: var(--color-brand);
+  color: var(--color-brand-dark);
+}

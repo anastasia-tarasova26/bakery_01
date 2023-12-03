@@ -1,0 +1,36 @@
+.input {
+  position: relative;
+
+  &__label {
+    display: block;
+  }
+
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid var(--color-bakery);
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.17;
+
+    &:focus {
+      border-color: var(--color-brand);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-bakery);
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 42px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.footer {
+  position: relative;
+  background-image: url("../images/footer-background.png");
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+
+  &::before {
+    width: 180px;
+    height: 120px;
+    background-image: url(../images/decor-bread-small.png);
+    left: 0;
+  }
+
+  &::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url(../images/decor-bread-large.png);
+  }
+
+  &::before,
+  &::after {
+    background-repeat: no-repeat;
+    bottom: 0;
+    position: absolute;
+    content: "";
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__nav,
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+  }
+
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
+
+  &__adress-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+    text-decoration: none;
+  }
+
+  &__adress-link:hover {
+    color: var(--color-brand);
+  }
+
+  &__adress-icon {
+    fill: var(--color-primary-light);
+  }
+
+  &__adress-icon:hover {
+    fill: var(--color-brand);
+  }
+
+  &__adress-copyright {
+    font-size: 14px;
+    color: var(--color-bakery);
+  }
+}
